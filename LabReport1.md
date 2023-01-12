@@ -17,11 +17,17 @@ Make sure to install the correct version for your operating system and follow th
 
 ![Image](https://github.com/jliu0140/cse15l-lab-reports/blob/main/vs%20code.PNG)
 ## Connecting Remotely
-To remotely connect, first open up a terminal in VS Code by pressing clicking Terminal->New Terminal at the top.
+To remotely connect, one of the first things to do is install `git` if you are on Windows. Install from this link: [https://gitforwindows.org/](https://gitforwindows.org/)
+
+Next, we will setup git bash as the default terminal. First open up the terminal by pressing Ctrl + ` or from the top menu.
 
 ![Image](https://github.com/jliu0140/cse15l-lab-reports/blob/main/open%20terminal.PNG)
 
-Enter `ssh ACCOUNTNAME@ieng6.ucsd.edu` into the terminal, where your account name is the cs15lwi23zzz that you found earlier. Enter yes for the first prompt and then enter your new password. Note, when entering your password, no corresponding text will show up in the terminal. Once done, the terminal should look like this.
+Next, press Ctrl + Shift + P and enter Select Default Profile. Select Git Bash.
+
+![Image](https://github.com/jliu0140/cse15l-lab-reports/blob/main/git%20bash.PNG)
+
+Once git bash is setup as the default terminal, enter `ssh ACCOUNTNAME@ieng6.ucsd.edu` into the terminal, where your account name is the cs15lwi23zzz that you found earlier. Enter yes for the first prompt and then enter your new password. Note, when entering your password, no corresponding text will show up in the terminal. Once done, the terminal should look like this.
 
 ![Image](https://github.com/jliu0140/cse15l-lab-reports/blob/main/terminal.PNG)
 ## Trying Commands
