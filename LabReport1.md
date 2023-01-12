@@ -4,7 +4,7 @@ Go to this link: [https://sdacs.ucsd.edu/~icc/index.php](https://sdacs.ucsd.edu/
 
 Sign in with your UCSD username and PID. The account name should be cs15lwi23zzz where zzz will be three characters unique to you.
 
-![15L account](https://github.com/jliu0140/cse15l-lab-reports/blob/main/15L%20account.png)
+![15L account.PNG](https://github.com/jliu0140/cse15l-lab-reports/blob/main/15L%20account.PNG)
 
 Click on your account name and look for a prompt to change your password. When creating a password, make sure it includes uppercase letters, lowercase letters, symbols, and numbers. Some characters such as spaces will not be allowed. When you have your password, make sure to mark no for "Change my TritonLink password. After, stay in the confirm password box and press enter. Do not click "Check Password."
 
