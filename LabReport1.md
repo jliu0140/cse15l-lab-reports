@@ -20,7 +20,7 @@ Make sure to install the correct version for your operating system and follow th
 ## Connecting Remotely
 To remotely connect, one of the first things to do is install `git` if you are on Windows. Install from this link: [https://gitforwindows.org/](https://gitforwindows.org/)
 
-Next, we will setup git bash as the default terminal. First open up the terminal by pressing Ctrl + ` or from the top menu.
+Next, we will setup git bash as the default terminal. First open up the terminal by pressing Ctrl + ` or open it from the top menu.
 
 ![Image](https://github.com/jliu0140/cse15l-lab-reports/blob/main/open%20terminal.PNG)
 
