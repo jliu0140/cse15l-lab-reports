@@ -1,6 +1,7 @@
 ## CSE15L Account
 We will first start by finding your CSE 15L account.
 Go to this link: [https://sdacs.ucsd.edu/~icc/index.php](https://sdacs.ucsd.edu/~icc/index.php)
+
 Sign in with your UCSD username and PID. The account name should be cs15lwi23zzz where zzz will be three characters unique to you.
 
 ![Image](https://github.com/jliu0140/cse15l-lab-reports/blob/main/15L%20account.PNG)
