@@ -56,6 +56,7 @@ Failure-Inducing Input
     assertArrayEquals(new int[]{5,4,3,2,1}, ArrayExamples.reversed(input1));
 }
 ```
+This test produced the following output:
 ```
 There was 1 failure:
 1) testReversedLonger(ArrayTests)
@@ -67,3 +68,13 @@ arrays first differed at element [0]; expected:<5> but was:<0>
         at org.junit.Assert.assertArrayEquals(Assert.java:429)
         at ArrayTests.testReversedLonger(ArrayTests.java:25)
  ```
+Rather than reversing the array, the output replaced everything with 0. This symptom was caused due to changing the elements in arr with those from newArray. However, since newArray was just created, all values are 0 by default, making all values of arr equal to 0. Furthermore, arr is returned as well, so the output array is all 0. This bug can be resolved by switching arr and newArray in the for loop and returning newArray.
+```
+static int[] reversed(int[] arr) {
+    int[] newArray = new int[arr.length];
+    for(int i = 0; i < arr.length; i += 1) {
+      newArray[i] = arr[arr.length - i - 1];
+    }
+    return newArray;
+}
+```
