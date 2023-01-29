@@ -38,6 +38,7 @@ After running the code, two lines of strings were entered into the url: "line 1 
 ![sc2](https://github.com/jliu0140/cse15l-lab-reports/blob/main/report2/addmessagess2.PNG?raw=true)
 
 ## Part 2
+ArrayExample
 ```
 static int[] reversed(int[] arr) {
     int[] newArray = new int[arr.length];
@@ -47,3 +48,22 @@ static int[] reversed(int[] arr) {
     return arr;
 }
 ```
+Failure-Inducing Input
+```
+@Test
+  public void testReversedLonger() {
+    int[] input1 = {1,2,3,4,5};
+    assertArrayEquals(new int[]{5,4,3,2,1}, ArrayExamples.reversed(input1));
+}
+```
+```
+There was 1 failure:
+1) testReversedLonger(ArrayTests)
+arrays first differed at element [0]; expected:<5> but was:<0>
+        at org.junit.internal.ComparisonCriteria.arrayEquals(ComparisonCriteria.java:78)
+        at org.junit.internal.ComparisonCriteria.arrayEquals(ComparisonCriteria.java:28)
+        at org.junit.Assert.internalArrayEquals(Assert.java:534)
+        at org.junit.Assert.assertArrayEquals(Assert.java:418)
+        at org.junit.Assert.assertArrayEquals(Assert.java:429)
+        at ArrayTests.testReversedLonger(ArrayTests.java:25)
+ ```
