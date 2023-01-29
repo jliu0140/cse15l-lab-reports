@@ -69,6 +69,7 @@ arrays first differed at element [0]; expected:<5> but was:<0>
         at ArrayTests.testReversedLonger(ArrayTests.java:25)
  ```
 Rather than reversing the array, the output replaced everything with 0. This symptom was caused due to changing the elements in arr with those from newArray. However, since newArray was just created, all values are 0 by default, making all values of arr equal to 0. Furthermore, arr is returned as well, so the output array is all 0. This bug can be resolved by switching arr and newArray in the for loop and returning newArray.
+Fixed Code:
 ```
 static int[] reversed(int[] arr) {
     int[] newArray = new int[arr.length];
@@ -76,5 +77,13 @@ static int[] reversed(int[] arr) {
       newArray[i] = arr[arr.length - i - 1];
     }
     return newArray;
+}
+```
+Here is a test that passed despite the bug:
+```
+@Test
+  public void testReversed() {
+    int[] input1 = {0};
+    assertArrayEquals(new int[]{0}, ArrayExamples.reversed(input1));
 }
 ```
