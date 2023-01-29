@@ -88,4 +88,4 @@ Here is a test that passed despite the bug:
     assertArrayEquals(new int[]{0}, ArrayExamples.reversed(input1));
 }
 ```
-Since the original array was only one 0, the output array should also just be one 0, which is in line with what bug was doing.
+Since the original array was only one 0, the output array should also just be one 0, which is in line with what the bug was doing.
