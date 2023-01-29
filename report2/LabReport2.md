@@ -32,7 +32,7 @@ class StringServer {
 }
 ```
 
-After running the code, two lines of strings were entered into the url: "line 1 of strings" and "line 2 of strings". This was able to see the code work with chars and ints.
+After running the code, two lines of strings were entered into the url: "line 1 of strings" and "line 2 of strings". This was able to see the code work with chars and ints. In the end, they were all converted to strings.
 
 ![sc1](https://github.com/jliu0140/cse15l-lab-reports/blob/main/report2/addmessagess.PNG?raw=true)
 ![sc2](https://github.com/jliu0140/cse15l-lab-reports/blob/main/report2/addmessagess2.PNG?raw=true)
