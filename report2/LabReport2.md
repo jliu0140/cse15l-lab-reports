@@ -70,18 +70,8 @@ arrays first differed at element [0]; expected:<5> but was:<0>
         at org.junit.Assert.assertArrayEquals(Assert.java:429)
         at ArrayTests.testReversedLonger(ArrayTests.java:25)
  ```
-Rather than reversing the array, the output replaced everything with 0. This symptom was caused due to changing the elements in arr with those from newArray. However, since newArray was just created, all values are 0 by default, overwriting all values of arr to 0. Furthermore, arr is returned as well, so the output array is all 0. This bug can be resolved by switching arr and newArray in the for loop and returning newArray. This will take the needed values from the input array in reverse order and then put them into the new array. The newArray now has the properly reversed values, and since it is returned, the output array will be correct.
+Rather than reversing the array, the output replaced everything with 0. This symptom was caused due to changing the elements in arr with those from newArray. However, since newArray was just created, all values are 0 by default, overwriting all values of arr to 0. Furthermore, arr is returned as well, so the output array is all 0. 
 
-Fixed Code:
-```
-static int[] reversed(int[] arr) {
-    int[] newArray = new int[arr.length];
-    for(int i = 0; i < arr.length; i += 1) {
-      newArray[i] = arr[arr.length - i - 1];
-    }
-    return newArray;
-}
-```
 Here is a test that passed despite the bug:
 ```
 @Test
@@ -95,6 +85,17 @@ Since the original array was only one 0, the output array should also just be on
 Here is the output of running both of the tests above:
 ![runtests](https://github.com/jliu0140/cse15l-lab-reports/blob/main/report2/runningtests.PNG?raw=true)
 One test passed and the other failed.
+This bug can be resolved by switching arr and newArray in the for loop and returning newArray. This will take the needed values from the input array in reverse order and then put them into the new array. The newArray now has the properly reversed values, and since it is returned, the output array will be correct.
+Fixed Code:
+```
+static int[] reversed(int[] arr) {
+    int[] newArray = new int[arr.length];
+    for(int i = 0; i < arr.length; i += 1) {
+      newArray[i] = arr[arr.length - i - 1];
+    }
+    return newArray;
+}
+```
 
 ## Part 3
 In week 2, I learned about setting up a web server. We can run it either locally on our computer or remotely when remotely connected to another device. To do so in Java, we make use of the URI. We can also make use of the URLHandler to make our program do something when a certain path or query is entered in the url.
