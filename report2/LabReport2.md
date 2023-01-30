@@ -97,6 +97,8 @@ static int[] reversed(int[] arr) {
     return newArray;
 }
 ```
+Now, both tests passed.
+![passed tests](https://github.com/jliu0140/cse15l-lab-reports/blob/main/report2/passedtest.PNG?raw=true)
 
 ## Part 3
 In week 2, I learned about setting up a web server. We can run it either locally on our computer or remotely when remotely connected to another device. To do so in Java, we make use of the URI. We can also make use of the URLHandler to make our program do something when a certain path or query is entered in the url.
