@@ -37,6 +37,8 @@ After running the code, two lines of strings were entered into the url: "line 1 
 ![sc1](https://github.com/jliu0140/cse15l-lab-reports/blob/main/report2/addmessagess.PNG?raw=true)
 ![sc2](https://github.com/jliu0140/cse15l-lab-reports/blob/main/report2/addmessagess2.PNG?raw=true)
 
+In both screenshots, the method handleRequest was called. The argument for handleRequest is and URI, url, which is the url to the web server. Depending on the path of the url, certain actions are done. If the url path is equal to "/add-message" then a string will be added to the page. The string str contains the entire string that is returned and outputed on the page. The array parameters holds the query in index 1, which contains the message to be added to str.
+
 ## Part 2
 ArrayExample
 ```
