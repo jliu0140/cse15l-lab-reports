@@ -85,6 +85,7 @@ Since the original array was only one 0, the output array should also just be on
 Here is the output of running both of the tests above:
 ![runtests](https://github.com/jliu0140/cse15l-lab-reports/blob/main/report2/runningtests.PNG?raw=true)
 One test passed and the other failed.
+
 This bug can be resolved by switching arr and newArray in the for loop and returning newArray. This will take the needed values from the input array in reverse order and then put them into the new array. The newArray now has the properly reversed values, and since it is returned, the output array will be correct.
 Fixed Code:
 ```
