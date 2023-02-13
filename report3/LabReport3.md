@@ -18,6 +18,9 @@ written_2/non-fiction/OUP/Abernathy/ch8.txt
 written_2/non-fiction/OUP/Abernathy/ch9.txt
 written_2/non-fiction/OUP/Berk
 ...
+written_2/travel_guides/berlitz2/Vallarta-History.txt
+written_2/travel_guides/berlitz2/Vallarta-WhatToDo.txt
+written_2/travel_guides/berlitz2/Vallarta-WhereToGo.txt
 ```
 
 Some additional options that we can use for the find command include `-name`, `-delete`, `-maxdepth`, and `-mindepth`.
