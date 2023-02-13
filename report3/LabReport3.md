@@ -117,4 +117,29 @@ written_2/travel_guides/berlitz1
 written_2/travel_guides/berlitz2
 ```
 
-The `find` only found files and directories into one level of subdirectories since a maxdepth of 2 was used. Once it reaches depth 3, which would be in `OUP`, `berlitz1`, and 'berlitz2`, it stops searching.
+The `find` only found files and directories into one level of subdirectories since a maxdepth of 2 was used. Once it reaches depth 3, which would be in `OUP`, `berlitz1`, and `berlitz2`, it stops searching. This can be useful if you only need to find files within a certain depth and do not want to search every single subdirectory. Otherwise, the output may become clogged with unncessary files.
+
+Example 2:
+```
+$ find written_2 -maxdepth 3 -name "*.txt"
+written_2/travel_guides/berlitz1/HandRHongKong.txt
+written_2/travel_guides/berlitz1/HandRIbiza.txt
+written_2/travel_guides/berlitz1/HandRIsrael.txt
+written_2/travel_guides/berlitz1/HandRIstanbul.txt
+written_2/travel_guides/berlitz1/HandRJamaica.txt
+written_2/travel_guides/berlitz1/HandRJerusalem.txt
+written_2/travel_guides/berlitz1/HandRLakeDistrict.txt
+written_2/travel_guides/berlitz1/HandRLasVegas.txt
+written_2/travel_guides/berlitz1/HandRLisbon.txt
+written_2/travel_guides/berlitz1/HandRLosAngeles.txt
+written_2/travel_guides/berlitz1/HandRMadeira.txt
+written_2/travel_guides/berlitz1/HandRMadrid.txt
+...
+written_2/travel_guides/berlitz2/PuertoRico-WhatToDo.txt
+written_2/travel_guides/berlitz2/PuertoRico-WhereToGo.txt
+written_2/travel_guides/berlitz2/Vallarta-History.txt
+written_2/travel_guides/berlitz2/Vallarta-WhatToDo.txt
+written_2/travel_guides/berlitz2/Vallarta-WhereToGo.txt
+```
+
+Similarly to `-delete`, `-maxdepth` can also be used in tandem with other options. This will search for all .txt files within a depth of 3 (`written_2/travel_guides/berlitz2/` or `written_2/travel_guides/berlitz1/`). None of the .txt files within the `non-fiction` subdirectory will be found since they have a depth of 4 (`written_2/non-fiction/OUP/*`). This can be useful when searching for some specific files, but only within a certain depth as to not fill the terminal.
