@@ -22,6 +22,13 @@ written_2/non-fiction/OUP/Rybczynski/ch1.txt
 In this example, the directory was written_2 and the name given was ch1.txt. The command will then look through written_2 for files named ch1.txt. This can be usedful if there is one specific file that you need to look for as the result will give the path to that file if it exists within the directory.
 
 Example 2:
+```
+$ find writte_2/ -name "*Hawaii*"
+written_2/travel_guides/berlitz1/HandRHawaii.txt
+written_2/travel_guides/berlitz1/HistoryHawaii.txt
+written_2/travel_guides/berlitz1/WhatToHawaii.txt
+written_2/travel_guides/berlitz1/WhereToHawaii.txt
+```
 
 ![name ex2](https://github.com/jliu0140/cse15l-lab-reports/blob/main/report3/name%20example2.PNG?raw=true)
 
