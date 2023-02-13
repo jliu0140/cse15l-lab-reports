@@ -1,7 +1,24 @@
 ## Find
 The find command will find all the files and directories within the given directory. For example, using `find written_2/' will print all of the files and directories inside the written_2 directory.
 
-![find example](https://github.com/jliu0140/cse15l-lab-reports/blob/main/report3/find.PNG?raw=true)
+```
+$ find written_2
+written_2
+written_2/non-fiction
+written_2/non-fiction/OUP
+written_2/non-fiction/OUP/Abernathy
+written_2/non-fiction/OUP/Abernathy/ch1.txt
+written_2/non-fiction/OUP/Abernathy/ch14.txt
+written_2/non-fiction/OUP/Abernathy/ch15.txt
+written_2/non-fiction/OUP/Abernathy/ch2.txt
+written_2/non-fiction/OUP/Abernathy/ch3.txt
+written_2/non-fiction/OUP/Abernathy/ch6.txt
+written_2/non-fiction/OUP/Abernathy/ch7.txt
+written_2/non-fiction/OUP/Abernathy/ch8.txt
+written_2/non-fiction/OUP/Abernathy/ch9.txt
+written_2/non-fiction/OUP/Berk
+...
+```
 
 Some additional options that we can use for the find command include `-name`, `-delete`, `-maxdepth`, and `-mindepth`.
 
@@ -79,6 +96,9 @@ $ find written_2/ -name "*Hawaii*"
 
 ```
 
-When `find written_2 -name "*Hawaii*"` is run afterwards, there is no output as those files are deleted.
+When `find written_2 -name "*Hawaii*"` is run afterwards, no such files are found since they have been deleted.
+
+Source: https://linuxize.com/post/how-to-find-files-in-linux-using-the-command-line/
 
 ## -maxdepth
+`-maxdepth` will use the find command at a maximum depth in directories. A depth of 1 will refer to the current directory. If a maxdepth of 2 is used, then `find` will only search within the given directory and the next level of subdirectories.
