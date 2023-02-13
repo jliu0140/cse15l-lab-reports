@@ -29,6 +29,10 @@ Example 1:
 
 ![delete before](https://github.com/jliu0140/cse15l-lab-reports/blob/main/report3/delete%20before.PNG?raw=true)
 ![files deleted](https://github.com/jliu0140/cse15l-lab-reports/blob/main/report3/files%20deleted.PNG?raw=true)
+
 Here is the directory before using `-delete` and the files found when using find. These are the files and directories that will be deleted.
 
-![files deleted](https://github.com/jliu0140/cse15l-lab-reports/blob/main/report3/files%20deleted.PNG?raw=true)
+![delete](https://github.com/jliu0140/cse15l-lab-reports/blob/main/report3/delete.PNG?raw=true)
+![delete](https://github.com/jliu0140/cse15l-lab-reports/blob/main/report3/delete%20after.PNG?raw=true)
+
+After the command is run, the Abernathy directory has been deleted as shown. Furthermore, the terminal gives no output after the command is run, immediately deleting Abernathy.
