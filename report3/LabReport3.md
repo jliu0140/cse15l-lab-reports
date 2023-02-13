@@ -181,4 +181,4 @@ written_2/non-fiction/OUP/Rybczynski/ch1.txt
 written_2/non-fiction/OUP/Rybczynski/ch2.txt
 written_2/non-fiction/OUP/Rybczynski/ch3.txt
 ```
-`-mindepth` can also be paired with other options as well. `find written_2 -mindepth 4 -name "*.txt"` will find all .txt files within a depth of 4 (`written_2/non-fiction/OUP/*`). All the .txt files in `written_2/travel_guides` are at a depth of 3 (`written_2/travel_guides/*`), so they are not found and printed out.
+`-mindepth` can also be paired with other options as well. `find written_2 -mindepth 4 -name "*.txt"` will find all .txt files within a depth of 4 (`written_2/non-fiction/OUP/*`). All the .txt files in `written_2/travel_guides` are at a depth of 3 (`written_2/travel_guides/*`), so they are not found and printed out. Again, this is useful in narrowing the search for `find` in order to not completely fill the terminal with every file and directory.
