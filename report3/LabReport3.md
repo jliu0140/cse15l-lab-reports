@@ -23,7 +23,7 @@ The `-name` option can also be used with `*`. In this case, the `find` command w
 Source: https://linuxize.com/post/how-to-find-files-in-linux-using-the-command-line/
 
 ## -Delete
-The `-delete` option will delete the files that are found using the `find` command. When using this option, however, the files will be deleted immediately, so be sure to know what files will be found. A quick run of the find without the `-delete` option beforehand can easily print out the files that would be deleted.
+The `-delete` option will delete the files that are found using the `find` command. Using `find` on a directory will find the entire directory, and subsequently delete the entire directory if `delete` is used. Using `find` for just one file will find only that file and delete it if `-delete` is used. When using this option, however, the files will be deleted immediately, so be sure to know what files will be found. A quick run of the find without the `-delete` option beforehand can easily print out the files that would be deleted.
 
 Example 1:
 
