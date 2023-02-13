@@ -147,7 +147,7 @@ Similarly to `-delete`, `-maxdepth` can also be used in tandem with other option
 Source: https://linux.die.net/man/1/find
 
 ## -mindepth
-Similar to `-maxdepth`, `-mindepth` will search for items within a minumum depth. Depth will also be the same, whereas 0 refers to the command-line arguments, 1 to the given directory, and 2 and beyond as its subdirectories.
+Similar to `-maxdepth`, `-mindepth` will search for items within a minumum depth. Depth will also be the same, where 0 refers to the command-line arguments, 1 to the given directory, and 2 and beyond as its subdirectories.
 
 Example 1:
 ```
