@@ -38,3 +38,13 @@ Here is the directory before using `-delete` and the files found when using find
 ![delete](https://github.com/jliu0140/cse15l-lab-reports/blob/main/report3/delete%20after.PNG?raw=true)
 
 After the command is run, the Abernathy directory has been deleted as shown. Furthermore, the terminal gives no output after the command is run, immediately deleting Abernathy. This can be useful when you want to delete some files, especially if you are remotely connected to somewhere and cannot manually access the files locally.
+
+Example 2:
+
+![delete paired](https://github.com/jliu0140/cse15l-lab-reports/blob/main/report3/delete%20paired.PNG?raw=true)
+
+`-delete` can also be paired with other options as well. Here, the `find` command will find all files with "Hawaii" in the name and delete them.
+
+![delete paired after](https://github.com/jliu0140/cse15l-lab-reports/blob/main/report3/delete%20paired%20after.PNG?raw=true)
+
+When `find written_2 -name "*Hawaii*"` is run afterwards, there is no output as those files are deleted.
