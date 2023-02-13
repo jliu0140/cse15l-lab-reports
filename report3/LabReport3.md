@@ -26,7 +26,7 @@ written_2/travel_guides/berlitz2/Vallarta-WhereToGo.txt
 Some additional options that we can use for the find command include `-name`, `-delete`, `-maxdepth`, and `-mindepth`.
 
 ## -name
-The `-name` option will look for files within the directory that has the given name in its file name. It can be used by adding `-name name` after the directory.
+The `-name` option will look for files within the directory that has the given name in its file name. It can be used by adding `-name FILE_NAME` after the directory.
 
 Example 1:
 ```
