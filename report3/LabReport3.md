@@ -104,7 +104,7 @@ When `find written_2 -name "*Hawaii*"` is run afterwards, no such files are foun
 Source: https://linuxize.com/post/how-to-find-files-in-linux-using-the-command-line/
 
 ## -maxdepth
-`-maxdepth` will use the find command at a maximum depth in directories. A depth of 0 will only find the command line arguments (the given directory) and a depth of 1 will refer to the current directory. If a maxdepth of 2 is used, then `find` will only search within the given directory and the next level of subdirectories.
+`-maxdepth` will use the find command at a maximum depth in directories. A depth of 0 will only find the command-line arguments (the given directory) and a depth of 1 will refer to the given directory. If a maxdepth of 2 is used, then `find` will only search within the given directory and the next level of subdirectories.
 
 Example 1:
 ```
@@ -117,7 +117,7 @@ written_2/travel_guides/berlitz1
 written_2/travel_guides/berlitz2
 ```
 
-The `find` only found files and directories into one level of subdirectories since a maxdepth of 2 was used. Once it reaches depth 3, which would be in `OUP`, `berlitz1`, and `berlitz2`, it stops searching. This can be useful if you only need to find files within a certain depth and do not want to search every single subdirectory. Otherwise, the output may become clogged with unncessary files.
+The `find` only found files and directories into one level of subdirectories since a maxdepth of 2 (`written_2/*`) was used. Once it reaches depth 3, which would be in `written_2/non-fiction/OUP`, `written_2/travel_guides/berlitz1`, and `written_2/travel_guides/berlitz2`, it stops searching. This can be useful if you only need to find files within a certain depth and do not want to search every single subdirectory. Otherwise, the output may become clogged with unncessary files.
 
 Example 2:
 ```
@@ -143,3 +143,76 @@ written_2/travel_guides/berlitz2/Vallarta-WhereToGo.txt
 ```
 
 Similarly to `-delete`, `-maxdepth` can also be used in tandem with other options. This will search for all .txt files within a depth of 3 (`written_2/travel_guides/berlitz2/` or `written_2/travel_guides/berlitz1/`). None of the .txt files within the `non-fiction` subdirectory will be found since they have a depth of 4 (`written_2/non-fiction/OUP/*`). This can be useful when searching for some specific files, but only within a certain depth as to not fill the terminal.
+
+Source: https://linux.die.net/man/1/find
+
+## -mindepth
+Similar to `-maxdepth`, `-mindepth` will search for items within a minumum depth. Depth will also be the same, whereas 0 refers to the command-line arguments, 1 to the given directory, and 2 and beyond as its subdirectories.
+
+Example 1:
+```
+$ find written_2 -mindepth 2
+written_2/non-fiction/OUP
+written_2/non-fiction/OUP/Abernathy
+written_2/non-fiction/OUP/Abernathy/ch1.txt
+written_2/non-fiction/OUP/Abernathy/ch14.txt
+written_2/non-fiction/OUP/Abernathy/ch15.txt
+...
+written_2/travel_guides/berlitz2/PuertoRico-WhatToDo.txt
+written_2/travel_guides/berlitz2/PuertoRico-WhereToGo.txt
+written_2/travel_guides/berlitz2/Vallarta-History.txt
+written_2/travel_guides/berlitz2/Vallarta-WhatToDo.txt
+written_2/travel_guides/berlitz2/Vallarta-WhereToGo.txt
+```
+
+The output is similar to `find written_2`, but since a depth of 2 is used, `written_2/non-fiction`, `written_2/travel_guides` and any content directly in `written_2/` are not found as it normally would in `find written_2`. This command is useful just like `-maxdepth` to not look for everything, which may clutter the terminal.
+
+Example 2:
+```
+$ find written_2 -mindepth 4
+written_2/non-fiction/OUP/Abernathy/ch1.txt
+written_2/non-fiction/OUP/Abernathy/ch14.txt
+written_2/non-fiction/OUP/Abernathy/ch15.txt
+written_2/non-fiction/OUP/Abernathy/ch2.txt
+written_2/non-fiction/OUP/Abernathy/ch3.txt
+written_2/non-fiction/OUP/Abernathy/ch6.txt
+written_2/non-fiction/OUP/Abernathy/ch7.txt
+written_2/non-fiction/OUP/Abernathy/ch8.txt
+written_2/non-fiction/OUP/Abernathy/ch9.txt
+written_2/non-fiction/OUP/Berk/ch1.txt
+written_2/non-fiction/OUP/Berk/ch2.txt
+written_2/non-fiction/OUP/Berk/CH4.txt
+written_2/non-fiction/OUP/Berk/ch7.txt
+written_2/non-fiction/OUP/Castro/chA.txt
+written_2/non-fiction/OUP/Castro/chB.txt
+written_2/non-fiction/OUP/Castro/chC.txt
+written_2/non-fiction/OUP/Castro/chL.txt
+written_2/non-fiction/OUP/Castro/chM.txt
+written_2/non-fiction/OUP/Castro/chN.txt
+written_2/non-fiction/OUP/Castro/chO.txt
+written_2/non-fiction/OUP/Castro/chP.txt
+written_2/non-fiction/OUP/Castro/chQ.txt
+written_2/non-fiction/OUP/Castro/chR.txt
+written_2/non-fiction/OUP/Castro/chV.txt
+written_2/non-fiction/OUP/Castro/chW.txt
+written_2/non-fiction/OUP/Castro/chY.txt
+written_2/non-fiction/OUP/Castro/chZ.txt
+written_2/non-fiction/OUP/Fletcher/ch1.txt
+written_2/non-fiction/OUP/Fletcher/ch10.txt
+written_2/non-fiction/OUP/Fletcher/ch2.txt
+written_2/non-fiction/OUP/Fletcher/ch5.txt
+written_2/non-fiction/OUP/Fletcher/ch6.txt
+written_2/non-fiction/OUP/Fletcher/ch9.txt
+written_2/non-fiction/OUP/Kauffman/ch1.txt
+written_2/non-fiction/OUP/Kauffman/ch10.txt
+written_2/non-fiction/OUP/Kauffman/ch3.txt
+written_2/non-fiction/OUP/Kauffman/ch4.txt
+written_2/non-fiction/OUP/Kauffman/ch5.txt
+written_2/non-fiction/OUP/Kauffman/ch6.txt
+written_2/non-fiction/OUP/Kauffman/ch7.txt
+written_2/non-fiction/OUP/Kauffman/ch8.txt
+written_2/non-fiction/OUP/Kauffman/ch9.txt
+written_2/non-fiction/OUP/Rybczynski/ch1.txt
+written_2/non-fiction/OUP/Rybczynski/ch2.txt
+written_2/non-fiction/OUP/Rybczynski/ch3.txt
+```
