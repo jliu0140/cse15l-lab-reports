@@ -5,7 +5,7 @@ The find command will find all the files and directories within the given direct
 
 Some additional options that we can use for the find command include `-name`, `-delete`, `-maxdepth`, and `-mindepth`.
 
-## -Name
+## -name
 The `-name` option will look for files within the directory that has the given name in its file name. It can be used by adding `-name name` after the directory.
 
 Example 1:
@@ -33,7 +33,7 @@ The `-name` option can also be used with `*`. In this case, the `find` command w
 
 Source: https://linuxize.com/post/how-to-find-files-in-linux-using-the-command-line/
 
-## -Delete
+## -delete
 The `-delete` option will delete the files that are found using the `find` command. Using `find` on a directory will find the entire directory, and subsequently delete the entire directory if `delete` is used. Using `find` for just one file will find only that file and delete it if `-delete` is used. When using this option, however, the files will be deleted immediately, so be sure to know what files will be found. A quick run of the find without the `-delete` option beforehand can easily print out the files that would be deleted.
 
 Example 1:
@@ -67,10 +67,18 @@ After the command is run, the Abernathy directory has been deleted as shown. Fur
 
 Example 2:
 
-![delete paired](https://github.com/jliu0140/cse15l-lab-reports/blob/main/report3/delete%20paired.PNG?raw=true)
+```
+$ find written_2/ -name "*Hawaii*" -delete
 
-`-delete` can also be paired with other options as well. Here, the `find` command will find all files with "Hawaii" in the name and delete them.
+```
 
-![delete paired after](https://github.com/jliu0140/cse15l-lab-reports/blob/main/report3/delete%20paired%20after.PNG?raw=true)
+`-delete` can also be paired with other options as well. Here, the `find` command will find all files with "Hawaii" in the name and delete them. Again, there is no output after running the `-delete` option.
+
+```
+$ find written_2/ -name "*Hawaii*"
+
+```
 
 When `find written_2 -name "*Hawaii*"` is run afterwards, there is no output as those files are deleted.
+
+## -maxdepth
