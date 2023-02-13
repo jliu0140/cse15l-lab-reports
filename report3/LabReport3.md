@@ -16,6 +16,6 @@ In this example, the directory was written_2 and the name given was ch1.txt. The
 
 Example 2:
 
-![name ex2](https://github.com/jliu0140/cse15l-lab-reports/blob/main/report3/-name%20example2.PNG?raw=true)
+![name ex2](https://github.com/jliu0140/cse15l-lab-reports/blob/main/report3/name%20example2.PNG?raw=true)
 
-The `-name` option can also be used with `*`.
+The `-name` option can also be used with ``*`. In this case, the `find` command will look within written_2 for all files containing "Hawaii" in the name. This can be useful when looking for all files with some common naming. The same idea can be used with file types such as with `-name "*.txt"`.
