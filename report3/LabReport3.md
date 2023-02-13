@@ -18,4 +18,4 @@ Example 2:
 
 ![name ex2](https://github.com/jliu0140/cse15l-lab-reports/blob/main/report3/-name%20example2.PNG?raw=true)
 
-The `-name` expression can also be used with *.
+The `-name` option can also be used with `*`. 
