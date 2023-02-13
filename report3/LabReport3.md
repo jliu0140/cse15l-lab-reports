@@ -104,4 +104,17 @@ When `find written_2 -name "*Hawaii*"` is run afterwards, no such files are foun
 Source: https://linuxize.com/post/how-to-find-files-in-linux-using-the-command-line/
 
 ## -maxdepth
-`-maxdepth` will use the find command at a maximum depth in directories. A depth of 1 will refer to the current directory. If a maxdepth of 2 is used, then `find` will only search within the given directory and the next level of subdirectories.
+`-maxdepth` will use the find command at a maximum depth in directories. A depth of 0 will only find the command line arguments (the given directory) and a depth of 1 will refer to the current directory. If a maxdepth of 2 is used, then `find` will only search within the given directory and the next level of subdirectories.
+
+Example 1:
+```
+$ find written_2 -maxdepth 2
+written_2
+written_2/non-fiction
+written_2/non-fiction/OUP
+written_2/travel_guides
+written_2/travel_guides/berlitz1
+written_2/travel_guides/berlitz2
+```
+
+The `find` only found files and directories into one level of subdirectories since a maxdepth of 2 was used. Once it reaches depth 3, which would be in `OUP`, `berlitz1`, and 'berlitz2`, it stops searching.
