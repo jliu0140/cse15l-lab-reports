@@ -51,7 +51,7 @@ written_2/travel_guides/berlitz1/WhereToHawaii.txt
 
 The `-name` option can also be used with `*`. In this case, the `find` command will look within written_2 for all files containing "Hawaii" in the name. This can be useful when looking for all files with some common naming. The same idea can be used with file types such as with `-name "*.txt"`.
 
-Source: https://linuxize.com/post/how-to-find-files-in-linux-using-the-command-line/
+Source: [https://linuxize.com/post/how-to-find-files-in-linux-using-the-command-line/](https://linuxize.com/post/how-to-find-files-in-linux-using-the-command-line/)
 
 ## -delete
 The `-delete` option will delete the files that are found using the `find` command. Using `find` on a directory will find the entire directory, and subsequently delete the entire directory if `delete` is used. Using `find` for just one file will find only that file and delete it if `-delete` is used. When using this option, however, the files will be deleted immediately, so be sure to know what files will be found. A quick run of the find without the `-delete` option beforehand can easily print out the files that would be deleted.
@@ -101,7 +101,7 @@ $ find written_2/ -name "*Hawaii*"
 
 When `find written_2 -name "*Hawaii*"` is run afterwards, no such files are found since they have been deleted.
 
-Source: https://linuxize.com/post/how-to-find-files-in-linux-using-the-command-line/
+Source: [https://linuxize.com/post/how-to-find-files-in-linux-using-the-command-line/](https://linuxize.com/post/how-to-find-files-in-linux-using-the-command-line/)
 
 ## -maxdepth
 `-maxdepth` will use the find command at a maximum depth in directories. A depth of 0 will only find the command-line arguments (the given directory) and a depth of 1 will refer to the given directory. If a maxdepth of 2 is used, then `find` will only search within the given directory and the next level of subdirectories.
@@ -144,7 +144,7 @@ written_2/travel_guides/berlitz2/Vallarta-WhereToGo.txt
 
 Similarly to `-delete`, `-maxdepth` can also be used in tandem with other options. This will search for all .txt files within a depth of 3 (`written_2/travel_guides/berlitz2/` or `written_2/travel_guides/berlitz1/`). None of the .txt files within the `non-fiction` subdirectory will be found since they have a depth of 4 (`written_2/non-fiction/OUP/*`). This can be useful when searching for some specific files, but only within a certain depth as to not fill the terminal.
 
-Source: https://linux.die.net/man/1/find
+Source: [https://linux.die.net/man/1/find](https://linux.die.net/man/1/find)
 
 ## -mindepth
 Similar to `-maxdepth`, `-mindepth` will search for items within a minumum depth. Depth will also be the same, where 0 refers to the command-line arguments, 1 to the given directory, and 2 and beyond as its subdirectories.
@@ -183,4 +183,4 @@ written_2/non-fiction/OUP/Rybczynski/ch3.txt
 ```
 `-mindepth` can also be paired with other options as well. `find written_2 -mindepth 4 -name "*.txt"` will find all .txt files within a depth of 4 (`written_2/non-fiction/OUP/*`). All the .txt files in `written_2/travel_guides` are at a depth of 3 (`written_2/travel_guides/*`), so they are not found and printed out. Again, this is useful in narrowing the search for `find` in order to not completely fill the terminal with every file and directory.
 
-Source: https://linux.die.net/man/1/find
+Source: [https://linux.die.net/man/1/find](https://linux.die.net/man/1/find)
