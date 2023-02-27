@@ -1,5 +1,5 @@
 ## Step 1
-`<up><up><up><enter>
+`<up><up><up><enter>`
 
 ```
 git clone git@github.com:jliu0140/lab7.git; cd lab7; javac -cp ".:lib/junit-4.13.2.jar:lib/hamcrest-core-1.3.jar" *.java; java -cp ".:lib/junit-4.13.2.jar:lib/hamcrest-core-1.3.jar" org.junit.runner.JUnitCore TestListExamples; echo 'import java.util.ArrayList;
