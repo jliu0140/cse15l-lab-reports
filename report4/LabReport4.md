@@ -4,6 +4,7 @@ Key presses: `<up><enter>`
 This was used to access the command from the bash history, which was saved in a previous run. Five `<up>`s were used since there were four other commands involved from the start of the previous run. Only one `<up>` was necessary since all the other commands were run from remotely. The resulting command was to ssh into the remote machine.
 
 `ssh cs15lwi23aqa@ieng6.ucsd.edu`
+
 Result:
 ![ssh](https://github.com/jliu0140/cse15l-lab-reports/blob/main/report4/ssh.PNG?raw=true)
 
