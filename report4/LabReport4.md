@@ -69,3 +69,7 @@ Result:
 ![cmd](https://github.com/jliu0140/cse15l-lab-reports/blob/main/report4/command.PNG?raw=true)
 ![part1](https://github.com/jliu0140/cse15l-lab-reports/blob/main/report4/result%20part%201.PNG?raw=true)
 ![part2](https://github.com/jliu0140/cse15l-lab-reports/blob/main/report4/result%20part%202.PNG?raw=true)
+
+Changes in GitHub:
+
+![github change](https://github.com/jliu0140/cse15l-lab-reports/blob/main/report4/github%20changes.PNG?raw=true)
