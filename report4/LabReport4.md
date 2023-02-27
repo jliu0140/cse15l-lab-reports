@@ -1,12 +1,12 @@
 ## Step 4
-`<up><enter>`
+Key presses: `<up><enter>`
 
 This was used to access the command from the bash history, which was saved in a previous run. Five `<up>`s were used since there were four other commands involved from the start of the previous run. Only one `<up>` was necessary since all the other commands were run from remotely. The resulting command was to ssh into the remote machine.
 
 `ssh cs15lwi23aqa@ieng6.ucsd.edu`
 
 ## Step 5-9
-`<up><up><up><up><enter>`
+Key presses: `<up><up><up><up><enter>`
 
 Similarly, this also got a command from the bash history, from a previous run. This one command made use of `;`, which separated commands in order to run multiple in one line. Every command was run from one line to be as efficient. The command was four up in history as three other commands were used to reset for the next run: `cd ..`, `rm -r -f lab7`, `exit`.
 
