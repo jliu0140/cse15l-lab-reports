@@ -51,5 +51,6 @@ result;\n      }\n    }' > ListExamples.java; javac -cp ".:lib/junit-4.13.2.jar:
 ```
 
 Result: 
+
 ![part1](https://github.com/jliu0140/cse15l-lab-reports/blob/main/report4/result%20part%201.PNG?raw=true)
 ![part2](https://github.com/jliu0140/cse15l-lab-reports/blob/main/report4/result%20part%202.PNG?raw=true)
