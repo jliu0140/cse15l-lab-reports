@@ -29,7 +29,7 @@ These commands used in the line:
 
 **Step 7:**
 
-`echo -e '...' > ListExamples.java` - This command took the output of echo, which was the ListExamples.java file with the corrections, and redirected it into ListExamples.java. This was how ListExamples.java was directly edited from terminal without using an editor. The `-e` option allowed the use of `\n` to create new lines.
+`echo -e '...' > ListExamples.java` - This command took the output of echo (what would be inside the quotes), which was the ListExamples.java file with the corrections, and redirected it into ListExamples.java. This was how ListExamples.java was directly edited from terminal without using an editor. The `-e` option allowed the use of `\n` to create new lines.
 
 **Step 8:**
 
