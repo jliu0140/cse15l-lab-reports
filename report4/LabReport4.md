@@ -7,6 +7,7 @@ This was used to access the command from the bash history, which was saved in a 
 
 Result:
 
+![ssh command](https://github.com/jliu0140/cse15l-lab-reports/blob/main/report4/ssh%20command.PNG?raw=true)
 ![ssh](https://github.com/jliu0140/cse15l-lab-reports/blob/main/report4/ssh.PNG?raw=true)
 
 ## Step 5-9
