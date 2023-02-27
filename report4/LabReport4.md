@@ -72,4 +72,4 @@ Result:
 
 Changes in GitHub:
 
-![github change])
+![github change](https://github.com/jliu0140/cse15l-lab-reports/blob/main/report4/github%20change.PNG?raw=true)
