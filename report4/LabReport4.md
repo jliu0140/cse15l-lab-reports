@@ -12,7 +12,6 @@ Result:
 
 ## Step 5-9
 Key presses: `<up><up><up><up><enter>`
-![cmd](https://github.com/jliu0140/cse15l-lab-reports/blob/main/report4/command.PNG?raw=true)
 
 Similarly, this also got a command from the bash history, from a previous run. This one line made use of `;`, which separated commands in order to run multiple in one line. Every command was run from one line to be as efficient. The command was four up in history as three other commands were used to reset for the next run: `cd ..`, `rm -r -f lab7`, `exit`.
 
@@ -65,5 +64,6 @@ result;\n      }\n    }' > ListExamples.java; javac -cp ".:lib/junit-4.13.2.jar:
 
 Result: 
 
+![cmd](https://github.com/jliu0140/cse15l-lab-reports/blob/main/report4/command.PNG?raw=true)
 ![part1](https://github.com/jliu0140/cse15l-lab-reports/blob/main/report4/result%20part%201.PNG?raw=true)
 ![part2](https://github.com/jliu0140/cse15l-lab-reports/blob/main/report4/result%20part%202.PNG?raw=true)
