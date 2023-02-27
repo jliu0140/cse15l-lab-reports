@@ -6,6 +6,7 @@ This was used to access the command from the bash history, which was saved in a 
 `ssh cs15lwi23aqa@ieng6.ucsd.edu`
 
 Result:
+
 ![ssh](https://github.com/jliu0140/cse15l-lab-reports/blob/main/report4/ssh.PNG?raw=true)
 
 ## Step 5-9
@@ -15,6 +16,7 @@ Key presses: `<up><up><up><up><enter>`
 Similarly, this also got a command from the bash history, from a previous run. This one line made use of `;`, which separated commands in order to run multiple in one line. Every command was run from one line to be as efficient. The command was four up in history as three other commands were used to reset for the next run: `cd ..`, `rm -r -f lab7`, `exit`.
 
 These commands used in the line:
+
 **Step 5:**
 
 `git clone git@github.com:jliu0140/lab7.git` - This command cloned the repository from github.
