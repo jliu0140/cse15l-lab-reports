@@ -1,25 +1,29 @@
 ## Step 4
+![ssh command](https://github.com/jliu0140/cse15l-lab-reports/blob/main/report4/ssh%20command.PNG?raw=true)
+![ssh](https://github.com/jliu0140/cse15l-lab-reports/blob/main/report4/ssh.PNG?raw=true)
+
 Key presses: `<up><enter>`
 
 This was used to access the command from the bash history, which was saved in a previous run. Only one `<up>` was necessary since all the other commands were run from remotely. The bash history on my local terminal only had the `ssh` run. The resulting command was to ssh into the remote machine.
 
 `ssh cs15lwi23aqa@ieng6.ucsd.edu`
 
-Result:
+## Steps 5-9
+![cmd](https://github.com/jliu0140/cse15l-lab-reports/blob/main/report4/command.PNG?raw=true)
+![part1](https://github.com/jliu0140/cse15l-lab-reports/blob/main/report4/result%20part%201.PNG?raw=true)
+![part2](https://github.com/jliu0140/cse15l-lab-reports/blob/main/report4/result%20part%202.PNG?raw=true)
 
-![ssh command](https://github.com/jliu0140/cse15l-lab-reports/blob/main/report4/ssh%20command.PNG?raw=true)
-![ssh](https://github.com/jliu0140/cse15l-lab-reports/blob/main/report4/ssh.PNG?raw=true)
-
-## Step 5-9
 Key presses: `<up><up><up><up><enter>`
 
 Similarly, this also got a command from the bash history, from a previous run. This one line made use of `;`, which separated commands in order to run multiple in one line. Every command for steps 5-9 was run from one line to be as efficient. The command was four up in history as three other commands were used to reset for the next run by changing directory, deleting the repository, and exiting the remote machine: `cd ..`, `rm -r -f lab7`, `exit`.
 
-These commands used in the line:
+The commands used in the line:
 
 **Step 5:**
 
 `git clone git@github.com:jliu0140/lab7.git` - This command cloned the repository from github.
+
+`cd lab7` - This commands changed the working directory to the repository that was just cloned.
 
 **Step 6:**
 
@@ -63,12 +67,6 @@ if(list1.get(index1).compareTo(list2.get(index2)) < 0) {\n            result.add
 result;\n      }\n    }' > ListExamples.java; javac -cp ".:lib/junit-4.13.2.jar:lib/hamcrest-core-1.3.jar" *.java; java -cp ".:lib/junit-4.13.2.jar:lib/hamcrest-core-
 1.3.jar" org.junit.runner.JUnitCore ListExamplesTests; git add ListExamples.java; git commit -m "updated"; git push
 ```
-
-Result: 
-
-![cmd](https://github.com/jliu0140/cse15l-lab-reports/blob/main/report4/command.PNG?raw=true)
-![part1](https://github.com/jliu0140/cse15l-lab-reports/blob/main/report4/result%20part%201.PNG?raw=true)
-![part2](https://github.com/jliu0140/cse15l-lab-reports/blob/main/report4/result%20part%202.PNG?raw=true)
 
 Changes in GitHub:
 
