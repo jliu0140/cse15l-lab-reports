@@ -33,7 +33,7 @@ These commands used in the line:
 
 **Step 8:**
 
-The java files were compiled and the tester was ran again here using the same commands above.
+The java files were compiled and the tester was ran again here using the same commands from step 6.
 
 **Step 9:**
 
