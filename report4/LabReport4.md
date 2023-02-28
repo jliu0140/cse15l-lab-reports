@@ -15,7 +15,7 @@ This was used to access the command from the bash history, which was saved in a 
 
 Key presses: `<up><up><up><up><enter>`
 
-Similarly, this also got a command from the bash history, from a previous run. This one line made use of `;`, which separated commands in order to run multiple in one line. Every command for steps 5-9 was run from one line to be as efficient. The command was four up in history as three other commands were used to reset for the next run by changing directory, deleting the repository, and exiting the remote machine: `cd ..`, `rm -r -f lab7`, `exit`.
+Similarly, this also got a command from the bash history, from a previous run. This one line made use of `;`, which separated commands in order to run multiple in one line. Every command for steps 5-9 was run from one line to be as efficient. `<up>` was pressed four times since there were three other commands in the bash history that were used to reset for the next run by changing directory, deleting the repository, and exiting the remote machine: `cd ..`, `rm -r -f lab7`, `exit`.
 
 The commands used in the line:
 
