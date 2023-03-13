@@ -137,10 +137,10 @@ Submission with wrong file name:
 
 ![wrong-name](https://github.com/jliu0140/cse15l-lab-reports/blob/main/report5/wrong%20name.PNG?raw=true)
 
-Submission with file nested in another directory:
+Submission with file nested in another directory (unable to access file):
 
 ![nested](https://github.com/jliu0140/cse15l-lab-reports/blob/main/report5/nested%20file.PNG?raw=true)
 
-Submission with more subtle bugs:
+Submission with more subtle bugs in implementation:
 
 ![subtle](https://github.com/jliu0140/cse15l-lab-reports/blob/main/report5/subtle.PNG?raw=true)
