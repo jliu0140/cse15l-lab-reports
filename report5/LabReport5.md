@@ -117,23 +117,23 @@ This section will run the tester and print the results.
 
 If there were failures, then `grep "Tests run:" results.txt` will be run to print how many tests and failures there were. This will print out the part of the output that says "Tests run: x, Failures: y". Afterwards, `grep "test" results.txt` is run to print out each of the individual tests that failed inside `results.txt`. The output is done this way rather than printing all of it in order to keep it clean. This removes the unncessary information such as the time it took to run and the tests when they were running.
 ## Results
-Submission with incorrect implementation:
+Submission with incorrect implementation (doesn't pass all tests):
 
 ![lab3](https://github.com/jliu0140/cse15l-lab-reports/blob/main/report5/lab3.PNG?raw=true)
 
-Submission with correct implementation:
+Submission with correct implementation (passes all tests):
 
 ![lab3-corrected](https://github.com/jliu0140/cse15l-lab-reports/blob/main/report5/lab3%20corrected.PNG?raw=true)
 
-Submission with compiler error:
+Submission with compiler error (stops at compilation):
 
 ![compiler-error](https://github.com/jliu0140/cse15l-lab-reports/blob/main/report5/compiler%20error.PNG?raw=true)
 
-Submission with wrong method signature:
+Submission with wrong method signature (stops at compilation):
 
 ![signature](https://github.com/jliu0140/cse15l-lab-reports/blob/main/report5/wrong%20signature.PNG?raw=true)
 
-Submission with wrong file name:
+Submission with wrong file name (file not found):
 
 ![wrong-name](https://github.com/jliu0140/cse15l-lab-reports/blob/main/report5/wrong%20name.PNG?raw=true)
 
@@ -141,6 +141,6 @@ Submission with file nested in another directory (unable to access file):
 
 ![nested](https://github.com/jliu0140/cse15l-lab-reports/blob/main/report5/nested%20file.PNG?raw=true)
 
-Submission with more subtle bugs in implementation:
+Submission with more subtle bugs in implementation (doesn't pass all tests):
 
 ![subtle](https://github.com/jliu0140/cse15l-lab-reports/blob/main/report5/subtle.PNG?raw=true)
