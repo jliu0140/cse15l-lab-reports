@@ -126,7 +126,7 @@ Submission with correct implementation (passes all tests):
 
 ![lab3-corrected](https://github.com/jliu0140/cse15l-lab-reports/blob/main/report5/lab3%20corrected.PNG?raw=true)
 
-Submission with compiler error (stops at compilation):
+Submission with syntax error (compiler error):
 
 ![compiler-error](https://github.com/jliu0140/cse15l-lab-reports/blob/main/report5/compiler%20error.PNG?raw=true)
 
