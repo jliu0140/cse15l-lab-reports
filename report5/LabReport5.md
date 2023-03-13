@@ -38,6 +38,7 @@ else
 fi
 ```
 ## Details
+When writing the script, I broke it down into four parts that I wanted to do and wrote them one at a time. The four parts include setting up for the tests, checking for the correct file, compiling the file (and checking it compiled correctly), and running the tests.
 ```
 CPATH='.;../lib/hamcrest-core-1.3.jar;../lib/junit-4.13.2.jar'
 
